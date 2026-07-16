@@ -5,18 +5,15 @@ class CustomTextField extends StatelessWidget {
     super.key,
     required this.hintText,
     this.onChanged,
-    this.obscure = false,
     this.inputType,
   });
   final String hintText;
   final Function(String)? onChanged;
-  final bool? obscure;
   final TextInputType? inputType;
   @override
   Widget build(BuildContext context) {
     return TextField(
       keyboardType: inputType,
-      obscureText: obscure!,
       onChanged: onChanged,
       decoration: InputDecoration(
         hintText: hintText,

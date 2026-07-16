@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:storeapp/model/product_model.dart';
+import 'package:storeapp/core/model/product_model.dart';
 import 'package:storeapp/screens/update_product_page.dart';
 
 class CustomCard extends StatelessWidget {
@@ -19,7 +19,7 @@ class CustomCard extends StatelessWidget {
               boxShadow: [
                 BoxShadow(
                   blurRadius: 40,
-                  color: Colors.grey.withOpacity(0.2),
+                  color: Colors.grey.withValues(alpha: 0.2),
                   spreadRadius: 20,
                   offset: Offset(10, 10),
                 ),
@@ -34,14 +34,11 @@ class CustomCard extends StatelessWidget {
                 ),
                 child: Column(
                   mainAxisAlignment: MainAxisAlignment.end,
+                  crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
-                    Row(
-                      children: [
-                        Text(
-                          product.title.substring(0, 6),
-                          style: TextStyle(color: Colors.grey, fontSize: 16),
-                        ),
-                      ],
+                    Text(
+                      product.title.substring(0, 6),
+                      style: TextStyle(color: Colors.grey, fontSize: 16),
                     ),
                     SizedBox(height: 3),
                     Row(

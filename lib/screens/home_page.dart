@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
-import 'package:storeapp/model/product_model.dart';
-import 'package:storeapp/services/all_product.dart';
-import 'package:storeapp/widget/custom_card.dart';
+import 'package:storeapp/core/model/product_model.dart';
+import 'package:storeapp/core/services/get_all_product.dart';
+import 'package:storeapp/core/widget/custom_card.dart';
 
 class HomePage extends StatelessWidget {
   const HomePage({super.key});

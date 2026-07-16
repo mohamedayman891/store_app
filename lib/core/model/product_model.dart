@@ -15,7 +15,7 @@ class ProductModel {
     required this.category,
     required this.rating,
   });
-  factory ProductModel.fromjson(jsonData) {
+  factory ProductModel.fromjson(dynamic jsonData) {
     return ProductModel(
       id: jsonData["id"],
       title: jsonData["title"],
@@ -32,7 +32,7 @@ class RatingModel {
   final double rate;
   final int count;
   RatingModel({required this.rate, required this.count});
-  factory RatingModel.fromjson(jsonData) {
+  factory RatingModel.fromjson(dynamic jsonData) {
     return RatingModel(
       rate: (jsonData["rate"] as num).toDouble(),
       count: jsonData["count"],

@@ -1,5 +1,5 @@
-import 'package:storeapp/helper/api.dart';
-import 'package:storeapp/model/product_model.dart';
+import 'package:storeapp/core/helper/api.dart';
+import 'package:storeapp/core/model/product_model.dart';
 
 class CatecoriesService {
   Future<List<ProductModel>> getCategoriesProducts({
